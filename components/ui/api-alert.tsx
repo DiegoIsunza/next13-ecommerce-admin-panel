@@ -26,7 +26,7 @@ const variantMap: Record<ApiAlertProps["variant"], BadgeProps["variant"]> = {
 export const ApiAlert: React.FC<ApiAlertProps> = ({title, description, variant = "public"}) => {
     const onCopy = () => {
         navigator.clipboard.writeText(description);
-        toast.success("Copied to clipboard.");
+        toast.success("Api Route copied to clipboard.");
     };
     return (
         <Alert>
